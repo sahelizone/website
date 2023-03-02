@@ -358,8 +358,11 @@
 
           const text = response.text;
 
-          console.log(response.JSON);
-          window.location.reload();
+          console.log(response);
+          
+          setTimeout(function(){
+            window.location.reload()
+          }, 1000)
           }
           else{
             alert("Enter name and comment")
