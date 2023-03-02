@@ -330,7 +330,7 @@
     <script type="text/javascript">
       function add_comment() {
           console.log("done");
-          const url = "http://127.0.0.1:5000/form";
+          const url = "https://sahelizone.pythonanywhere.com/form";
           var name = document.getElementById("comment_name");
           var comment = document.getElementById("comment");
           console.log(name.value);
@@ -370,7 +370,7 @@
     <script type="text/javascript">
       var a_data;
       var xhr = new XMLHttpRequest();
-      xhr.open("GET", "http://127.0.0.1:5000/data");
+      xhr.open("GET", "https://sahelizone.pythonanywhere.com/data");
       xhr.onload = function () {
         if (xhr.status === 200) {
           var a_data = JSON.parse(xhr.responseText);
@@ -478,7 +478,7 @@
     <script type="text/javascript">
         function add_callback() {
           console.log("done");
-          const url = "http://127.0.0.1:5000/form";
+          const url = "https://sahelizone.pythonanywhere.com/form";
           var name = document.getElementById("callback_name");
           var email = document.getElementById("email");
           var phone = document.getElementById("phone");
